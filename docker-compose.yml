@@ -1,0 +1,11 @@
+version: '2'
+services:
+  cephGO:
+    image: war-run:0.1
+    restart: always
+    container_name: cephGO
+    network_mode: host
+    privileged: true
+    tty: true
+    volumes:
+      - "/data/cephGO:/opt"
